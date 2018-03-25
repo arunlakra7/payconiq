@@ -1,0 +1,16 @@
+<div>
+  <table class="table">
+    <tr>
+      <th>Number</th>
+      <th>Name</th>
+      <th>Current price</th>
+      <th>Last update</th>
+    </tr>
+    <tr *ngFor="let stock of stocks | async">
+      <td>{{stock.id}}</td>
+      <td>{{stock.name}}</td>
+      <td>{{stock.currentPrice}}</td>
+      <td>{{stock.lastUpdate}}</td>
+    </tr>
+  </table>
+</div>
